@@ -1,0 +1,24 @@
+🏢 Infraestrutura da Farmácia Virtual
+Amazon EC2 (Elastic Compute Cloud)
+
+Função: É o "servidor" ou computador virtual.
+
+Aplicação na Farmácia: Aqui ficará hospedado o site (Frontend) onde o cliente navega e o sistema (Backend) que processa os pagamentos e pedidos. Ele permite que o site aguente muitos acessos simultâneos.
+
+Amazon RDS (Relational Database Service)
+
+Função: Banco de dados relacional gerenciado.
+
+Aplicação na Farmácia: Armazena de forma organizada e segura o inventário de medicamentos, dados cadastrais dos clientes, histórico de compras e preços. Por ser gerenciado, a AWS cuida dos backups automaticamente.
+
+Amazon S3 (Simple Storage Service)
+
+Função: Armazenamento de objetos (arquivos) em larga escala.
+
+Aplicação na Farmácia: Local onde serão guardadas as fotos dos produtos e, principalmente, as imagens das receitas médicas enviadas pelos clientes. É um serviço extremamente seguro e barato para guardar arquivos que não mudam com frequência.
+
+AWS IAM (Identity and Access Management)
+
+Função: Controle de acesso e segurança.
+
+Aplicação na Farmácia: Define quem pode fazer o quê. Por exemplo: O "Farmacêutico" tem acesso para ler as receitas no S3, mas o "Entregador" só tem acesso ao endereço do cliente no banco de dados. Isso garante a proteção de dados sensíveis (LGPD).
